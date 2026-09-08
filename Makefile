@@ -1,18 +1,23 @@
 CXX := clang++
 CXXFLAGS := -std=c++26 -Wall -Wextra -O2
 
-TARGET := main
-SRC := main.cpp
+TARGETS := calc sim
 
-.PHONY: all run clean
+.PHONY: all run-calc run-sim clean
 
-all: $(TARGET)
+all: $(TARGETS)
 
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
+calc: calc.cpp
+	$(CXX) $(CXXFLAGS) calc.cpp -o calc
 
-run: $(TARGET)
-	./$(TARGET)
+sim: sim.cpp
+	$(CXX) $(CXXFLAGS) sim.cpp -o sim
+
+run-calc: calc
+	./calc
+
+run-sim: sim
+	./sim
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGETS)
