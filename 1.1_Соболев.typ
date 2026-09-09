@@ -173,10 +173,10 @@ $ <eq-mean-ly>
 Средние проекции совпадают. Тогда
 
 $
-  A_"теор" = L / chevron.l l_x chevron.r = pi/2
+  A_"теор" = L / (chevron.l l_x chevron.r) = pi/2
   approx 1,5708,
   quad
-  B_"теор" = L / chevron.l l_y chevron.r = pi/2
+  B_"теор" = L / (chevron.l l_y chevron.r) = pi/2
   approx 1,5708,
 $ <eq-ab-theor>
 
@@ -291,13 +291,13 @@ $A$ и $B$ --- косвенные измерения, их погрешност�
 $
   A = L / chevron.l l_x chevron.r,
   quad
-  Delta A = A sqrt((Delta L / L)^2 + (Delta l_x / chevron.l l_x chevron.r)^2),
+  Delta A = A sqrt((Delta L / L)^2 + (Delta l_x / (chevron.l l_x chevron.r))^2),
 $ <eq-A>
 
 $
   B = L / chevron.l l_y chevron.r,
   quad
-  Delta B = B sqrt((Delta L / L)^2 + (Delta l_y / chevron.l l_y chevron.r)^2),
+  Delta B = B sqrt((Delta L / L)^2 + (Delta l_y / (chevron.l l_y chevron.r))^2),
 $ <eq-B>
 
 где $Delta L$ --- погрешность измерения длины зубочистки; $Delta l_x$,
