@@ -47,7 +47,7 @@ void simulate(size_t n, std::mt19937 &gen) {
   double B = L / meanY;
 
   std::cout << std::fixed << std::setprecision(4);
-  std::cout << "Numerical simulation: " << n << " ===\n\n";
+  std::cout << "Numerical simulation: " << n << "\n\n";
 
   std::cout << "lx (projection on X)\n";
   std::cout << "mean lx      = " << meanX << " mm\n";
