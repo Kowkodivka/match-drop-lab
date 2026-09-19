@@ -1,2 +1,7 @@
 .ruff_cache
 .DS_Store
+
+transcribe.py
+lab.m4a
+lab.txt
+1.1_Соболев.pdf
